@@ -60,7 +60,7 @@ a {
 a:hover {
   background: #8BA6A9;
   color: white;
-  tra
+  transition: all 0.3s ease-out;
 }
 
 ul {
@@ -76,6 +76,11 @@ ul {
 
 #sidebar a {
   color: #2F4858;
+}
+
+#sidebar a:hover {
+  color: white;
+  background: #2F4858;
 }
 
 
@@ -162,8 +167,6 @@ i {
   margin: auto;
 }
 
-#helvetica-love {
-}
 
 /* ----- 3.5/ LE WAGON CARD ----- */
 
@@ -172,15 +175,14 @@ i {
 }
 
 #button-cta a{
-  /*margin-top: 12px;*/
-  background: #8BA6A9;
+  background: #3BA99C;
   color: white;
   padding: 8px 16px;
-  border: 3px solid #8BA6A9;
+  border: 3px solid #3BA99C;
 }
 
 #button-cta a:hover {
-  color: #8BA6A9;
+  color: #3BA99C;
   background: white;
 }
 
@@ -191,7 +193,7 @@ i {
   color: #3BA99C;
   position: fixed;
   right: 2vw;
-  bottom: 2vh;
+  bottom: 20vh;
   transform: rotate(90deg);
   transform-origin: right bottom;
 }
