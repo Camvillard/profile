@@ -60,6 +60,11 @@ a {
 a:hover {
   background: #8BA6A9;
   color: white;
+  tra
+}
+
+ul {
+  padding-inline-start: 0px;
 }
 
 
@@ -121,7 +126,7 @@ p#about-me {
 
 /* ----- 3.2/ SOCIAL MEDIA CARD ----- */
 
-ul {
+#social-media ul {
   margin-top: 24px;
   list-style: none;
   padding-inline-start: 0px;
@@ -199,7 +204,7 @@ i {
 /* ----- 5/ RESPONSIVE THINGS ----- */
 
 
-@media only screen and (min-width: 860px) {
+@media (min-width: 860px) {
 
   .container {
     width: 64vw;
@@ -209,13 +214,13 @@ i {
 } /* end of 860 px*/
 
 
-@media only screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
 
   #sidebar {
     position: fixed;
+    left: 0px;
+    top: 40vh;
     transform: rotate(-90deg);
-    transform-origin: top right;
-    left: 2vw;
   }
 
   .container {
