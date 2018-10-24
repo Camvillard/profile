@@ -1,22 +1,29 @@
 
-/* ----- GENEREAL STYLES ----- */
+/* ----- 1/ GENEREAL STYLES ----- */
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   color: #2F4858;
-  background: #7A8A94;
   font-size: .9rem;
+  background-color: white;
+  background-image: linear-gradient(#E1F5F3 1px, transparent 1px),
+  linear-gradient(90deg, #E1F5F3 1px, transparent 1px),
+  linear-gradient(#E1F5F3 1px, transparent 1px),
+  linear-gradient(90deg, #E1F5F3 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position:-1px -1px;
 }
+
 
 .container {
   width: 80vw;
-  margin: 16px auto;
+  margin: 20px auto;
 }
 
 
 h1, h2, h3, h4 {
-  margin: 8px;
+  margin: 10px;
   font-family: 'Cabin', sans-serif;
   font-weight: 800;
   text-transform: uppercase;
@@ -48,7 +55,6 @@ a {
   color: #8BA6A9;
   font-size: .8rem;
   padding: 6px 12px;
-  /*border-bottom: 3px solid #000;*/
 }
 
 a:hover {
@@ -56,19 +62,31 @@ a:hover {
   color: white;
 }
 
-/*p {
-  margin: 2px 70px;
-}*/
+
+/* ----- 2/ SIDEBAR ----- */
+
+#sidebar {
+  text-align: center;
+}
+
+#sidebar a {
+  color: #2F4858;
+}
+
+
+/* ----- 3/ CONTENT ----- */
 
 .card {
   background: white;
   margin: 20px auto;
   border-radius: 3px;
   text-align: center;
-  padding: 14px 18px;
+  padding: 20px 26px;
+  outline: 1px solid #82C8C0;
+  outline-offset: -12px;
 }
 
-/* ----- HEADER CARD ----- */
+/* ----- 3.1/ HEADER CARD ----- */
 
 #profile-pic {
   max-width: 300px;
@@ -77,16 +95,31 @@ a:hover {
 }
 
 h3#header-subtitle {
+  margin: 20px auto;
+}
+
+h3#header-subtitle span {
   color: #ADE5DF;
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  border-top: 3px solid #ADE5DF;
+  border-bottom: 3px solid #ADE5DF;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 p#about-me {
   font-size: 1.1rem;
+  max-width: 70%;
+  margin: auto;
 }
 
-/* ----- SOCIAL MEDIA CARD ----- */
+#about-me span {
+  font-weight: 800;
+  line-height: 1rem;
+}
+
+/* ----- 3.2/ SOCIAL MEDIA CARD ----- */
 
 ul {
   margin-top: 24px;
@@ -110,21 +143,24 @@ i {
 }
 
 
-/* ----- TABLE STYLES ----- */
+/* ----- 3.3/ TABLE STYLES ----- */
 
 .love-things-img {
   max-width: 400px;
 }
 
 
-/* ----- HELVETICA CARD ----- */
+/* ----- 3.4/ HELVETICA CARD ----- */
 
 .card img {
   width: 80%;
   margin: auto;
 }
 
-/* ----- LE WAGON CARD ----- */
+#helvetica-love {
+}
+
+/* ----- 3.5/ LE WAGON CARD ----- */
 
 #button-cta {
   margin: 22px auto;
@@ -143,11 +179,11 @@ i {
   background: white;
 }
 
-/* ----- FOOTER ----- */
+/* ----- 4/ FOOTER ----- */
 
 #credits-love {
   font-size: .6rem;
-  color: white;
+  color: #3BA99C;
   position: fixed;
   right: 2vw;
   bottom: 2vh;
@@ -157,10 +193,10 @@ i {
 
 #credits-love i {
   font-size: .6rem;
-  color: white;
+  color: #3BA99C;
 }
 
-/* ----- RESPONSIVE THINGS ----- */
+/* ----- 5/ RESPONSIVE THINGS ----- */
 
 
 @media only screen and (min-width: 860px) {
@@ -175,10 +211,36 @@ i {
 
 @media only screen and (min-width: 1024px) {
 
+  #sidebar {
+    position: fixed;
+    transform: rotate(-90deg);
+    transform-origin: top right;
+    left: 2vw;
+  }
+
   .container {
     width: 52vw;
     margin: 16px auto;
   }
+
+  .card {
+    padding: 30px 34px;
+    outline-offset: -16px;
+  }
+
+  /* ----- 5.2/ HEADER CARD ----- */
+
+  p#about-me {
+    font-size: 1.1rem;
+    max-width: 70%;
+    margin: auto;
+  }
+
+  #about-me span {
+    font-weight: 800;
+    line-height: 2rem;
+  }
+
 
   .element {
     position: relative;
@@ -194,7 +256,6 @@ i {
     background: #F0FAF9;
     padding: 12px
   }
-
 
   .love-things-img {
     max-width: 500px;
