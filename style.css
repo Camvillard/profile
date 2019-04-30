@@ -206,7 +206,7 @@ i {
 /* ----- 5/ RESPONSIVE THINGS ----- */
 
 
-@media (min-width: 860px) {
+@media only screen and (min-width: 860px) {
 
   .container {
     width: 64vw;
@@ -216,7 +216,7 @@ i {
 } /* end of 860 px*/
 
 
-@media (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
 
   #sidebar {
     position: fixed;
